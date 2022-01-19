@@ -1,1 +1,1 @@
-const pc = newPlayableCharacter(100, 110)
+const pc = newPlayableCharacter(1500, 100)
