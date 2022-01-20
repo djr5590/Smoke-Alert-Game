@@ -3,7 +3,7 @@ function newPlayableCharacter(x, y) {
     element.style.zIndex = 1;
 
     function handleDirectionChange(direction) {
-        if (direction === null) {
+        if (direction === 'west') {
             element.src = `assets/smokeAlertChar.png`
             // or `assets/smokeAlertCharEast.png` if facing east
         }
