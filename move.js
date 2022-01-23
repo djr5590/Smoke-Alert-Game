@@ -21,10 +21,10 @@ function move(element) {
             if(direction === 'north'){
                 y+=1
             }
-            if(direction === 'east' && character.x <= 2000 ){
+            if(direction === 'east'){ // wrong
                 x+=1
             }
-            if(direction === 'south' && character.y <= 800){
+            if(direction === 'south'){  // wrong
                 y-=1
             }
             element.style.left = x + 'px'
