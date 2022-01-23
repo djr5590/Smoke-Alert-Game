@@ -1,6 +1,7 @@
-function fire(url, left, bottom){
-    let item = newImage(url, left, bottom)
-    item.addEventListener('click', function(){
-        item.remove()
+function newFire(url){
+    let fire = newImage(url)
+    fire.addEventListener('click', () =>{
+        fire.remove()
     })
+    return fire
 }

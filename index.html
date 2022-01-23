@@ -4,24 +4,27 @@
     <head>
         <title>SmokeAlert!-the Game</title>
         <style>
-            main {
+            #box {
+                border: 10px solid darkslategray;
+                width: 1600px;
+                height: 800px;
                 display: flex;
                 flex-direction: row;
-                justify-content: space-evenly;
             }
         </style>
     </head>
     <body>
+        <div id="box">
+        </div>
         <!-- onload="draw();" -->
     <!-- <canvas id="canvas" width="body" height="body"></canvas> -->
         <main>
-
+            <script src="./move.js"></script>
+            <script src="./newImage.js"></script>
+            <script src="./newPlayableCharacter.js"></script>
+            <script src="./script.js"></script>
+            <script src="./fire.js"></script>
+            <!-- <script src="./index.js"></script> -->
         </main>
-        <script src="./move.js"></script>
-        <script src="./newImage.js"></script>
-        <script src="./newPlayableCharacter.js"></script>
-        <script src="./script.js"></script>
-        <script src="./fire.js"></script>
-        <!-- <script src="./index.js"></script> -->
     </body>
 </html>

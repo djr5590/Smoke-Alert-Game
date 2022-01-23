@@ -1,3 +1,4 @@
+//Kaboom.js test for game. Possible option for alternate structure. Need to learn more about requirements to run Kaboom 
 kaboom({
     global: true,
 	width: 1600,

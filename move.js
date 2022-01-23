@@ -15,16 +15,16 @@ function move(element) {
         element.style.bottom = y + 'px'
         
         function moveCharacter(){ 
-            if(direction === 'west'){
+            if(direction === 'west' && x > 15){
                 x-=1
             }
-            if(direction === 'north'){
+            if(direction === 'north' && y > 590){
                 y+=1
             }
-            if(direction === 'east'){ // wrong
+            if(direction === 'east' && x < 1550){ 
                 x+=1
             }
-            if(direction === 'south'){  // wrong
+            if(direction === 'south' && y < 0){  // wrong
                 y-=1
             }
             element.style.left = x + 'px'
