@@ -18,13 +18,13 @@ function move(element) {
             if(direction === 'west' && x > 15){
                 x-=1
             }
-            if(direction === 'north' && y > 590){
+            if(direction === 'north' && y < 800){
                 y+=1
             }
             if(direction === 'east' && x < 1550){ 
                 x+=1
             }
-            if(direction === 'south' && y < 0){  // wrong
+            if(direction === 'south' && y > 100){  // wrong
                 y-=1
             }
             element.style.left = x + 'px'
