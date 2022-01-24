@@ -2,7 +2,7 @@
 const pc = newPlayableCharacter(100, 200)
 
 // move(character).withArrowKeys(100, 250)
-const boundary = boundaryWall()
+const border = borderWall()
 
 move(newImage('assets/cupboard.png')).to(500, 175)
 move(newImage('assets/cupboard.png')).to(100, 675)
