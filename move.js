@@ -17,16 +17,16 @@ function move(element) {
         function moveCharacter(){ 
             if(direction === 'east' && x < 1550){ 
                 x+=1
-            }
+            } // needs better parameters to start, stop and stay within the border; needs to flex
             if(direction === 'north' && y < 800){
                 y+=1
-            }
+            } // needs better parameters to start, stop and stay within the border; needs to flex
             if(direction === 'west' && x > 15){
                 x-=1
-            }
+            } // needs better parameters to start, stop and stay within the border; needs to flex
             if(direction === 'south' && y > 100){  
                 y-=1
-            }
+            } // needs better parameters to start, stop and stay within the border; needs to flex
             element.style.left = x + 'px'
             element.style.bottom = y + 'px'
         }

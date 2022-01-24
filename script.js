@@ -14,6 +14,12 @@ move(newFire('assets/Extras/fire.gif')).to(1220, 450)
 move(newFire('assets/Extras/fire.gif')).to(1230, 450)
 move(newFire('assets/Extras/fire.gif')).to(1240, 450)
 
+move(newFire('assets/Extras/fire.gif')).to(500, 215)
+move(newFire('assets/Extras/fire.gif')).to(510, 215)
+move(newFire('assets/Extras/fire.gif')).to(520, 215)
+move(newFire('assets/Extras/fire.gif')).to(530, 215)
+move(newFire('assets/Extras/fire.gif')).to(540, 215)
+move(newFire('assets/Extras/fire.gif')).to(550, 215)
 // document.addEventListener('keyup', event => {
 //     if (event.code === 'Space') {
 //       remove(newImage('assets/Extras/fire.gif'))

@@ -18,3 +18,25 @@ function newPlayableCharacter(x, y) {
         element: element
     }
 }
+
+function spacebarShootWater(){
+
+    document.addEventListener('keydown', event => {
+        if (event.code === 'Space') {
+            // add gif/image of water shooting
+        console.log('Space pressed')
+        element.src = 'assets/waterColumn.png'
+        // needs to shoot out of nozzle
+        }
+    })
+
+    document.addEventListener('keyup', event => {
+        if (event.code === 'Space') {
+            // remove gif/image of water shooting
+        console.log('Space pressed')
+        element.src = 'assets/waterColumn.png'
+        // needs to disapper
+        }
+    })
+
+}
