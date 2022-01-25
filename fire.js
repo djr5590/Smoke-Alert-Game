@@ -8,11 +8,14 @@ function newFire(url){
 }
 
 
-// spacebar event listener
+//spacebar event listener
 // function newFire(url){
 //     let item = newImage(url)
-//     item.addEventListener('space', () =>{
-//         item.remove() // error message populating, undefined
+//     item.addEventListener('keydown', event => {
+//         if (event.code === 'Space') {
+//             console.log('Space pressed')
+//             item.remove() //error message populating, undefined
+//         }
 //     })
 //     return item
 // }
