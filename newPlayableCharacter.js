@@ -1,5 +1,6 @@
 function newPlayableCharacter(x, y) {
     const element = newImage('assets/smokeAlertChar.png')
+    element.setAttribute("class", "char")
     element.style.zIndex = 1;
 
     function handleDirectionChange(direction) {
@@ -17,8 +18,8 @@ function newPlayableCharacter(x, y) {
     return {
         element: element
     }
-    
 }
+
 
 function shootWater(x, y) {
     const element = newImage('assets/waterColumn.gif')
@@ -29,13 +30,13 @@ function shootWater(x, y) {
             element.src = 'assets/waterColumn.gif'
         }
     }
-
+    
     key(element).withSpaceBar(x, y, pressSpaceBar)
-
+    
     return {
         element: element
     }
-
+    
 }
 
 document.addEventListener('keydown', event => {
@@ -43,4 +44,3 @@ document.addEventListener('keydown', event => {
         console.log('Space pressed')
     }
 })
-
