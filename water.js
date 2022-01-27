@@ -1,3 +1,4 @@
+// unused function, not passed into HTML
 function waterColumn(url){
     let water = newImage(url)
     water.addEventListener('keydown', event => {

@@ -20,25 +20,6 @@ function newPlayableCharacter(x, y) {
     }
 }
 
-
-function shootWater(x, y) {
-    const element = newImage('assets/waterColumn.gif')
-    element.style.zIndex = 0;
-
-    function pressSpaceBar(event) {
-        if (event.code === 'Space') {
-            element.src = 'assets/waterColumn.gif'
-        }
-    }
-    
-    key(element).withSpaceBar(x, y, pressSpaceBar)
-    
-    return {
-        element: element
-    }
-    
-}
-
 document.addEventListener('keydown', event => {
     if (event.code === 'Space') {
         console.log('Space pressed')

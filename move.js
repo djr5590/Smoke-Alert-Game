@@ -55,12 +55,6 @@ function move(element) {
             direction = null
             callback(direction)
         })
-        
-        // document.addEventListener('keydown', event => {
-        //     if (event.code === 'Space') {
-        //         console.log('Space pressed')
-        //     }
-        // })
     }
 
     return {

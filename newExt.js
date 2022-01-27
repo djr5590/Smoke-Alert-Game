@@ -1,3 +1,4 @@
+// class and constructor system; develop later on to practice. 
 class Player {
     constructor(){
         this.position ={
