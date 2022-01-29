@@ -18,8 +18,8 @@ function fire(url){
         //         console.log(item.position.x - charPos.position.x)
         //     }
 
-        if(e.clientX - charPos.x <= 100
-            && e.clientY - charPos.y <= 100){
+        if(e.clientX - charPos.x <= 5000
+            && e.clientY - charPos.y <= 5000){
                 console.log(e.clientX - charPos.x)
                 item.remove()
             }    
