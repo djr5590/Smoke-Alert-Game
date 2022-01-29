@@ -1,4 +1,6 @@
 // click function to test
+let shootingWater = false
+
 function fire(url){
     let item = newImage(url)
     // let pc = newPlayableCharacter
@@ -11,15 +13,18 @@ function fire(url){
     // }
 
     item.addEventListener('click', (e) =>{
+        if(!shootingWater) return
         let element = document.getElementsByClassName("char")
         let charPos = element[0].getBoundingClientRect();
         console.log(charPos)
         console.log(e.clientX, e.clientY)
 
-        if(e.click){
+        // if(charPos.position.y - e <= fire.position.y 
+        // && charPos.position.x - e <= fire.position.x){ fire before character
+
         item.remove()
-        //}
-    }
+        // }
+    })
     return item
 }
 

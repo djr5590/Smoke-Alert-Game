@@ -1,7 +1,8 @@
+const element = newImage('assets/smokeAlertChar.png')
+element.setAttribute("class", "char")
+element.style.zIndex = 1;
+
 function newPlayableCharacter(x, y) {
-    const element = newImage('assets/smokeAlertChar.png')
-    element.setAttribute("class", "char")
-    element.style.zIndex = 1;
 
     function handleDirectionChange(direction) {
         if (direction === 'west') {
@@ -14,6 +15,7 @@ function newPlayableCharacter(x, y) {
     }
 
     move(element).withArrowKeys(x, y, handleDirectionChange)
+    // move(element).withArrowKeys(x, y, shootWater)
 
     return {
         element: element
@@ -21,7 +23,33 @@ function newPlayableCharacter(x, y) {
 }
 
 document.addEventListener('keydown', event => {
-    if (event.code === 'Space') {
-        console.log('Space pressed')
+    console.log(event.code)
+    if (event.code === 'Space'){
+        shootingWater = true
+        if (directionFacing === 'west') {
+            element.src = 'assets/extShootWest.png'
+            // setTimeout(()=>{
+            //     element.src = 'assets/smokeAlertChar.png'
+            // }, 250)
+        }
+        if (directionFacing === 'east') {
+            element.src = 'assets/extShootEast.png'
+            // setTimeout(()=>{
+            //     element.src = 'assets/smokeAlertCharEast.png'
+            // }, 250)
+        }
+    }
+})
+
+document.addEventListener('keyup', event => {
+    console.log(event.code)
+    if (event.code === 'Space'){
+        shootingWater = false
+        if (directionFacing === 'west') {
+            element.src = 'assets/smokeAlertChar.png'
+        }
+        if (directionFacing === 'east') {
+            element.src = 'assets/smokeAlertCharEast.png'
+        }
     }
 })

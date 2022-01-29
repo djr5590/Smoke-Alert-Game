@@ -1,3 +1,6 @@
+let direction = null;
+let directionFacing = 'west'
+
 function move(element) {
     element.style.position = 'fixed'
 
@@ -7,7 +10,6 @@ function move(element) {
     }
 
     function moveWithArrowKeys(left, bottom, callback){
-        let direction = null;
         let x = left;
         let y = bottom;
 
@@ -34,16 +36,18 @@ function move(element) {
         setInterval(moveCharacter, 1)
         
         document.addEventListener('keydown', function(e){
-            if(e.repeat) return;
+            // if(e.repeat) return;
         
             if(e.key === 'ArrowLeft'){
                 direction = 'west'
+                directionFacing = 'west'
             }
             if(e.key === 'ArrowUp'){
                 direction = 'north'
             }
             if(e.key === 'ArrowRight'){
                 direction = 'east'
+                directionFacing ='east'
             }
             if(e.key === 'ArrowDown'){
                 direction = 'south'
