@@ -26,3 +26,4 @@ move(fire('assets/Extras/fire.gif')).to(530, 215)
 move(fire('assets/Extras/fire.gif')).to(540, 215)
 move(fire('assets/Extras/fire.gif')).to(550, 215)
 
+

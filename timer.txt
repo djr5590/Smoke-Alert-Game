@@ -1,0 +1,25 @@
+timer to be added in script.js later
+
+let timer
+let seconds = 0
+
+// stopwatch logic
+const startTimer = () => {
+    timer = setInterval(() => {
+        seconds++;
+        displayTime();
+    }, 1000)
+}
+
+const stopTimer = () => {
+    clearInterval(timer)
+}
+
+// display the time in the message box
+const displayTime = () => {
+    let stopwatch = document.getElementById("stopwatch");
+    stopwatch.innerHTML = ` ${seconds} seconds.`;
+};
+
+startTimer
+stopTimer
