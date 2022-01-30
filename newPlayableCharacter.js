@@ -27,16 +27,10 @@ document.addEventListener('keydown', event => {
     if (event.code === 'Space'){
         shootingWater = true
         if (directionFacing === 'west') {
-            element.src = 'assets/extShootWest.png'
-            // setTimeout(()=>{
-            //     element.src = 'assets/smokeAlertChar.png'
-            // }, 250)
+            element.src = 'assets/extShootWest.png'         
         }
         if (directionFacing === 'east') {
             element.src = 'assets/extShootEast.png'
-            // setTimeout(()=>{
-            //     element.src = 'assets/smokeAlertCharEast.png'
-            // }, 250)
         }
     }
 })
