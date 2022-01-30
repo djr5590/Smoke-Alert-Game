@@ -1,5 +1,6 @@
 // click function to test
 let shootingWater = false
+let startedStopwatch = false;
 
 function fire(url){
     let item = newImage(url)
@@ -26,5 +27,10 @@ function fire(url){
             }    
     })
     return item
+
+    // if (!startedStopwatch) {
+    //     startTimer();
+    //     startedStopwatch = true;
+    //   }
 }
 

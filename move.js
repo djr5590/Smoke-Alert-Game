@@ -17,10 +17,10 @@ function move(element) {
         element.style.bottom = y + 'px'
         
         function moveCharacter(){ 
-            if(direction === 'east' && x < 1550){ 
+            if(direction === 'east' && x < 1350){ 
                 x+=1
             } // needs better parameters to start, stop and stay within the border; needs to flex
-            if(direction === 'north' && y < 800){
+            if(direction === 'north' && y < 600){
                 y+=1
             } // needs better parameters to start, stop and stay within the border; needs to flex
             if(direction === 'west' && x > 15){

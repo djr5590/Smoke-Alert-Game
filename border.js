@@ -1,7 +1,7 @@
 function borderWall(){
     let border = document.createElement('div')
     border.style.width = '95%'
-    border.style.height = '800px' // see if height can be adjusted in percentage
+    border.style.height = '600px' // see if height can be adjusted in percentage
     border.style.display = 'flex'
     //border.style.flexDirection = 'row'
     //border.style.alignItems = 'center'
